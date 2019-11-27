@@ -27,7 +27,7 @@ public class BusinessService {
      * @param commodityCode
      * @param orderCount
      */
-    @GlobalTransactional
+    @GlobalTransactional//在 GlobalTransactionalInterceptor 中被拦截处理。 AOP拦截方法调用
     public void purchase(String userId, String commodityCode, int orderCount) {
         storageFeignClient.deduct(commodityCode, orderCount);
 

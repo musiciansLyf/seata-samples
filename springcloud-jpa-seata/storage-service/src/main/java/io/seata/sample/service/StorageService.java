@@ -18,7 +18,7 @@ public class StorageService {
     @Autowired
     private StorageDAO storageDAO;
 
-    @Transactional
+    @Transactional//TransactionDefinition.PROPAGATION_REQUIRED：如果当前存在事务，则加入该事务；如果当前没有事务，则创建一个新的事务。这是默认值。
     public void deduct(String commodityCode, int count) {
         Storage storage = storageDAO.findByCommodityCode(commodityCode);
         storage.setCount(storage.getCount() - count);

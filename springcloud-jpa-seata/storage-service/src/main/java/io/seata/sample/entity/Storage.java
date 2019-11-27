@@ -10,7 +10,7 @@ import org.hibernate.annotations.DynamicUpdate;
 @Entity
 @Table(name = "storage_tbl")
 @DynamicUpdate
-@DynamicInsert
+@DynamicInsert//设置为true,设置为true,表示insert对象的时候,生成动态的insert语句,如果这个字段的值是null就不会加入到insert语句当中.默认false。
 public class Storage {
 
     @Id
