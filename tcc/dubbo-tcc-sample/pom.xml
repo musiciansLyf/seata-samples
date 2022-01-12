@@ -34,7 +34,7 @@
         <zookeeper.version>3.4.6</zookeeper.version>
         <curator.version>2.9.1</curator.version>
         <dubbo.springboot.starter.version>1.0.0</dubbo.springboot.starter.version>
-        <dubbo.version>2.7.0</dubbo.version>
+        <dubbo.version>2.7.15</dubbo.version>
     </properties>
 
     <dependencies>
